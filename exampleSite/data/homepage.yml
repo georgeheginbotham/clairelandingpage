@@ -1,7 +1,7 @@
 ############################ banner ##########################
 banner:
   enable : true
-  title : "Live cooking class with Claire Sharryn Roberto"
+  title : "Live Cooking Class with Claire Sharryn Roberto"
   content : "Find clairty in your kitchen, health and mind through the lense of wholefoods with Claire Sharryn Roberto this April 1st"
   image : "images/banner.png"
   # button
@@ -12,7 +12,7 @@ banner:
   # demo video
   video:
     enable : true
-    videoURL : "https://www.youtube.com/embed/wf4F2-9UXUo"
+    videoURL : "https://www.youtube.com/embed/TFf7zMxnEl0"
 
 ########################## About ##############################
 about:
