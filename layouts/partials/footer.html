@@ -1,5 +1,13 @@
 <footer class="section pb-0 pt-0">
   <div class="container">
+          <div class="col-md-4 col-sm-6">
+        <!-- Social Icons -->
+        <ul class="list-inline">
+          {{ range site.Params.social }}
+          <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }} text-primary"></i></a></li>
+          {{ end }}
+        </ul>
+      </div>
     <div class="row">
       <div class="col-12 text-center py-4">
         {{ site.Params.copyright | markdownify  }}
