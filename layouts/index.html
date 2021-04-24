@@ -3,7 +3,7 @@
 <!-- banner -->
 {{ if site.Data.homepage.banner.enable }}
 {{ with site.Data.homepage.banner }}
-<section class="section-sm pt-3">
+<section class="section-sm pt-3 centerbanner">
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-5 col-md-6 order-2 order-md-1 pt-3">
@@ -43,37 +43,33 @@
 {{ end }}
 <!-- /banner -->
 
-<!-- material -->
-{{ if site.Data.homepage.material.enable }}
-{{ with site.Data.homepage.material }}
-<section class="section pb-0 pt-2">
+<!-- advantage -->
+{{ if site.Data.homepage.advantage.enable }}
+{{ with site.Data.homepage.advantage }}
+<section class="section pb-0">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6 mx-auto text-center">
-        <h2><b>{{ .title | markdownify }}</b></h2>
-        <p>{{ .subtitle | markdownify }}</p>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>{{ .title | markdownify }}</h2>
+        <p class="mb-4">{{ .subtitle | markdownify }}</p>
+        <ul class="list-unstyled" style="columns: 2;">
+          {{ range .advantageList }}
+          <li class="mb-3"><i class="ti-arrow-circle-right text-primary mr-2"></i>{{ .listItem }}</li>
+          {{ end }}
+        </ul>
       </div>
-    </div>
-    <div class="row">
-      {{ range .materialItem }}
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card border-0 text-center">
-          <img src="{{ .image | absURL }}" alt="material" class="card-img-top border-0">
-		<h4>{{ .title | markdownify }}</h4>
-        </div>
-      </div>
-      {{ end }}
     </div>
   </div>
 </section>
 {{ end }}
 {{ end }}
-<!-- /material -->
+<!-- /advantage -->
+
 
 <!-- about -->
 {{ if site.Data.homepage.about.enable }}
 {{ with site.Data.homepage.about }}
-<section class="section pt-4 pb-2">
+<section class="section pt-4 pb-2 centerbanner">
   <div class="container">
     <div class="row justify-content-around align-items-center">
       <div class="col-lg-5 col-md-6 pb-3">
