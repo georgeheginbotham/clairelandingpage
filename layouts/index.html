@@ -81,8 +81,17 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /about -->
 
+<!-- /about -->
+{{ if site.Data.image.about.enable }}
+{{ with site.Data.image.about }}
+<section class="section pt-4 pb-4 centerbanner">
+<div class="col-lg-5 col-md-6 pb-3 centerbanner">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+      </div>
+</section>
+{{ end }}
+{{ end }}
 
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup" class="pt-0 container centerbanner">
