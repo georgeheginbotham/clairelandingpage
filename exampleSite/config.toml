@@ -49,7 +49,7 @@ mobile = "0124857985320"
 email = "demo@email.com"
 location = "Dhaka, Bangladedsh"
 # copyright
-copyright = "Copyright &copy; 2021 Claire Sharryn Roberto | All Rights Reserved"
+copyright = "Copyright &copy; 2021 | Claire Sharryn Roberto | All Rights Reserved"
 # Snipcart Credentials
 snipcartApiKey = "M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"
 currencySymbol = "$"
