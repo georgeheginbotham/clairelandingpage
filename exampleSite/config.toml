@@ -59,3 +59,12 @@ currencySymbol = "$"
   enable = true
   preloader = "" # use .png , .svg or .gif format
 
+ # Social Site
+  [[params.social]]
+  icon = "ti-facebook"
+  link = "https://www.facebook.com/clairesharrynroberto"
+
+
+  [[params.social]]
+  icon = "ti-instagram"
+  link = "https://www.instagram.com/clairesharrynroberto/"
