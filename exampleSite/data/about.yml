@@ -1,0 +1,4 @@
+########################## About ##############################
+about:
+  enable : true
+  image : "images/food.jpg"
