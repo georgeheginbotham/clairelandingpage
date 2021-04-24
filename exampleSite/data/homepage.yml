@@ -42,3 +42,14 @@ material:
     # material item loop
     - title : "Interact with with Claire"
       image : "images/material/material-4.png"
+      
+########################### Advantage #########################
+advantage:
+  enable : true
+  title : "What's in it for you?"
+  advantageList:
+    # advantage list loop
+    - listItem : "Plant-based recpies"
+    - listItem : "Chef skills"
+    - listItem : "Save money on groceries"
+    - listItem : "Interact with with Claire"
