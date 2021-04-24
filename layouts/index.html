@@ -48,8 +48,8 @@
 {{ with site.Data.homepage.advantage }}
 <section class="section pb-0 pt-0 centerbanner">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
+    <div class="align-items-center">
+      <div class="md-6">
         <ul class="list-unstyled" style="columns: 1;">
           {{ range .advantageList }}
           <li class="mb-3"><h3>•  {{ .listItem }}  •</h3></li>
@@ -83,8 +83,8 @@
 {{ end }}
 
 <!-- /about -->
-{{ if site.Data.image.about.enable }}
-{{ with site.Data.image.about }}
+{{ if site.Data.about.about.enable }}
+{{ with site.Data.about.about }}
 <section class="section pt-4 pb-4 centerbanner">
 <div class="col-lg-5 col-md-6 pb-3 centerbanner">
         <img class="img-fluid" src="{{ .image | absURL }}" alt="">
